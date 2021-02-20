@@ -12,12 +12,22 @@ I recommend running these experiments using version 1.5.3.
 
 ## Global Historical Climatology Network
 
-Run
+Firstly, you'll need to get hold of the NASADEM (NASA Digital Elevation Map) data set.
+First sign up for an account here: https://urs.earthdata.nasa.gov/users/new to get credentials.
+Then navigate to the `scripts/nasa_data_grabbing` directory and run the
+`get_all_of_nasadem.sh` script.
+Running this script will prompt you for the credentials you obtained from NASA.
+It will download the data associated with the region studied in this work.
+It will produce a number of zip files, which you should unzip into `scripts/nasa_data_grabbing/nasa_data`.
+
+Once the above has been achieved, run
 ```
 julia scripts/global_historical_climatology_network.jl
 ```
-This experiment will prompt you to download a large amount of data from NOAA's Global
-Historical Climatology Network daily dataset, which is necessary to run these experiments.
+to run all experiments and reproduce results.
+Running this script will prompt you to download a large amount of data from NOAA's
+Global Historical Climatology Network daily dataset, which is necessary to run these
+experiments.
 
 Results will be output into `results/global_historical_climatology_network`.
 
