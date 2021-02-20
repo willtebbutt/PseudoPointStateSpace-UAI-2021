@@ -38,3 +38,6 @@ Run
 julia scripts/apartment_prices.jl
 ```
 Results will be output into `results/apartment_prices`.
+Running this script will prompt you to download a dataset from HM Land Registry database,
+and a database from Camden council containing a mapping between postcodes and lat-lon
+coordinates.
