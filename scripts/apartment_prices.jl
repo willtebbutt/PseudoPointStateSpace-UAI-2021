@@ -147,10 +147,6 @@ function build_processed_dataset(data::DataFrame, ts::RegularSpacing)
 
     # Group the training data by day / integer date.
     daily_data = map(collect(groupby(data, :date))) do d
-        # X = vcat(
-            # collect(hcat(d.lat, d.lon, d.new_build_enc)'),
-            # d.property_type_enc.X,
-        # )
         X = collect(hcat(d.lat, d.lon)')
         return (
             t = only(unique(d.integer_day)),
