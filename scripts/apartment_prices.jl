@@ -33,7 +33,7 @@ using ParameterHandling: positive, deferred, flatten
 using TemporalGPs: approx_posterior_marginals, RegularInTime, Separable
 using Zygote: dropgrad
 
-const exp_dir_name = joinpath("icml-2021", "house_data");
+const exp_dir_name = joinpath("apartment_prices");
 const data_dir = joinpath(datadir(), exp_dir_name);
 const metadata_dir = joinpath(data_dir, "meta");
 const training_output_dir = joinpath(data_dir, "training");
