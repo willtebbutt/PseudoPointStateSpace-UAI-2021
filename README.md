@@ -8,7 +8,8 @@ You must have a working version of Julia installed to run this code -- experimen
 I recommend running these experiments using version 1.5.3.
 
 ## Benchmarking
-
+Run the `scripts/run_benchmarking_experiments.sh` script.
+Results will be output to `results/benchmarking`.
 
 ## Global Historical Climatology Network
 
