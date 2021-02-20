@@ -12,7 +12,7 @@ I recommend running these experiments using version 1.5.3.
 
 ## Global Historical Climatology Network
 
-Execute
+Run
 ```
 julia scripts/global_historical_climatology_network.jl
 ```
