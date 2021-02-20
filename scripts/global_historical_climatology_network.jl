@@ -389,14 +389,6 @@ let
                 # The first date for the training data.
                 :start_date => [Date(2000)],
             ),),
-
-            # Dict(
-            #     # Use the SKI / KISS-GP approximation.
-            #     :experiment_type => "SKI",
-
-            #     # The first date for the training data.
-            #     :start_date => [Date(2015)],
-            # ),
         ),
     )
 
