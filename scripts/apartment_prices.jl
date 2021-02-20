@@ -665,13 +665,6 @@ let
                 label="", c=cgrad(colour_scheme), right_margin=6Plots.mm,
             );
 
-            # scatter!(
-            #     plt, getindex.(x_r, 2), first.(x_r);
-            #     label="Sold Houses",
-            #     markersize=5,
-            #     marker=:square,
-            #     color=colorant"#A95AA1", # Purple
-            # )
             scatter!(
                 plt, getindex.(z_r, 2), first.(z_r);
                 label="z",
@@ -714,16 +707,6 @@ let
                 label="", c=colour_scheme, right_margin=3Plots.mm,
             )
 
-            # scatter!(plt, getindex.(x_r, 2), first.(x_r); label="Sold Houses", color=:blue)
-            # scatter!(plt, getindex.(z_r, 2), first.(z_r); label="z", α=0.8, color=:red)
-
-            # scatter!(
-            #     plt, getindex.(x_r, 2), first.(x_r);
-            #     label="Sold Houses",
-            #     markersize=5,
-            #     marker=:square,
-            #     color=colorant"#A95AA1", # Purple
-            # )
             scatter!(
                 plt, getindex.(z_r, 2), first.(z_r);
                 label="z",
@@ -754,48 +737,3 @@ let
         end
     end
 end
-
-
-
-
-
-
-
-
-
-
-
-
-# Functionality to construct a land-sea mask that's actually at high resolution using
-# ArchGDAL's functionality. It's rather slow, so is probably the kind of thing that you
-# really only want to run once. Will do this later on when closer to the deadline if time
-# permits.
-# using GeometricalPredicates
-# geom = vcat(
-#     GADM.get("GBR", "England"; children=true)[2].geom,
-#     GADM.get("GBR", "Wales"; children=true)[2].geom,
-# )[1];
-# geom = GADM.get("GBR", "England").geom;
-# london_lons = (-6, 2);
-# london_lats = (50, 56);
-
-# pt = ArchGDAL.createpoint(-1.23, 52.24);
-
-# ArchGDAL.within.(geom, Ref(pt))
-
-# ArchGDAL.contains.(geom, Ref(pt))
-
-# function point_map(lat_lon_pairs, geom)
-#     return map(
-#         ((lat, lon), ) -> ArchGDAL.contains(geom, ArchGDAL.createpoint(lon, lat)),
-#         lat_lon_pairs,
-#     )
-# end
-
-# pm = point_map(lat_lon_pairs, geom[1])
-
-
-# boroughs = vcat(
-#     GADM.get("GBR", "England"; children=true)[2].geom,
-#     GADM.get("GBR", "Wales"; children=true)[2].geom,
-# );
