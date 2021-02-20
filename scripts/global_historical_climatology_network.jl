@@ -1,10 +1,7 @@
 println("GHCN")
 
-using Revise
-
 using Pkg
 Pkg.activate(".");
-Pkg.resolve();
 Pkg.instantiate();
 
 using ArgParse
@@ -43,30 +40,14 @@ using TemporalGPs:
     RectilinearGrid,
     Separable
 
-const exp_dir_name = joinpath("icml-2021", "ghcn");
+const exp_dir_name = joinpath("global_historical_climatology_network");
 const data_dir = joinpath(datadir(), exp_dir_name);
 const metadata_dir = joinpath(data_dir, "meta");
 const training_output_dir = joinpath(data_dir, "training");
 const prediction_output_dir = joinpath(data_dir, "predictions");
 const results_dir = joinpath(projectdir(), "results", exp_dir_name);
 
-
-# Specify data to load and load it.
-# const lon_interval = (-10, 2);
-# const lat_interval = (50, 60);
-
-# # Covers a large chunk of central Europe, including the Alps.
-# const lon_interval = (5, 15);
-# const lat_interval = (45, 55);
-
-# # Covers a smaller chunk of central Europe, including the Alps.
-# const lon_interval = (6, 14);
-# const lat_interval = (45, 49);
-
 # Washington + a bit of Canada.
-const lon_interval = (-127, -116);
-const lat_interval = (41, 50);
-
 const lon_interval = (-125, -122);
 const lat_interval = (47, 49);
 
