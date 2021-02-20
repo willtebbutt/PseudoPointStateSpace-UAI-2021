@@ -16,6 +16,9 @@ Run
 ```
 julia scripts/global_historical_climatology_network.jl
 ```
+This experiment will prompt you to download a large amount of data from NOAA's Global
+Historical Climatology Network daily dataset, which is necessary to run these experiments.
+
 Results will be output into `results/global_historical_climatology_network`.
 
 ## Apartment Prices
