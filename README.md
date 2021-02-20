@@ -7,6 +7,13 @@ All experiments should be run from the top level of this repo -- don't navigate 
 You must have a working version of Julia installed to run this code -- experiments were run using version 1.5.3, a copy of which can be obtained from https://julialang.org/downloads/ .
 I recommend running these experiments using version 1.5.3.
 
+There are no additional binary dependencies other than Julia itself.
+
+This project comes equipped with a `Manifest.toml`, which is a specification of the exact
+commit of each dependency which was used in this project.
+Consequently, when running any of the scripts below, you should wind up with precisely the
+same versions of all dependencies originally used to produce the results from the paper.
+
 ## Benchmarking
 Run the `scripts/run_benchmarking_experiments.sh` script.
 Results will be output to `results/benchmarking`.
