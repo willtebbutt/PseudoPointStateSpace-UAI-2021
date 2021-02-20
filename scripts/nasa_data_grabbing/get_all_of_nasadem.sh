@@ -13,7 +13,7 @@ trap finish EXIT
 WGETRC="$wgetrc"
 
 prompt_credentials() {
-    echo "Enter your Earthdata Login or other provider supplied credentials"
+    echo "Enter your Earthdata Login or oter provider supplied credentials"
     read -p "Username: " username
     username=${username:-wt0881}
     read -s -p "Password: " password
