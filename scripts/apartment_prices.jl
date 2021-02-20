@@ -218,11 +218,7 @@ const all_data = @time generate_housing_data(data_dir);
 
 
 
-# Restrict data set to consider only London. These coordinates pretty much restrict us to
-# the M25 corridor.
-london_lons = (-0.55, 0.31);
-london_lats = (51.27, 51.72);
-
+# These aren't actually London's coordinates, they're for the whole of England + Wales.
 london_lons = (-6, 2);
 london_lats = (50, 56);
 
