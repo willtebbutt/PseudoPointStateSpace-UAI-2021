@@ -16,5 +16,6 @@ Run
 ```
 julia scripts/global_historical_climatology_network.jl
 ```
+Results will be output into `results/global_historical_climatology_network`.
 
 ## Apartment Prices
