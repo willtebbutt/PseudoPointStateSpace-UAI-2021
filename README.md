@@ -1,6 +1,8 @@
 # Combining Pseudo-Point and State Space Approximations for Sum-Separable Gaussian Processes
 
-Code for review at UAI 2021. Reasonable attempts have been made to anonymise the code.
+Implements the experiments in [1].
+This repo is helpful for the sake of reproducing the experiments, but a better starting
+point for using the approximation developed in [1] is [TemporalGPs.jl](https://github.com/JuliaGaussianProcesses/TemporalGPs.jl).
 
 All experiments should be run from the top level of this repo -- don't navigate into the scripts directory.
 
@@ -49,3 +51,8 @@ Results will be output into `results/apartment_prices`.
 Running this script will prompt you to download a dataset from HM Land Registry database,
 and a database from Camden council containing a mapping between postcodes and lat-lon
 coordinates.
+
+
+## Something Doesn't Work?
+
+Please open an issue.
